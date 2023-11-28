@@ -1,15 +1,19 @@
 import modules.operations as op
 
 
-def main():
-    print("Операции над X и Y")
-    history = list()
-    print("""1. Сложение
+def print_hint():
+    print("""Выберите опреацию
+1. Сложение
 2. Вычитание
 3. Умножение
 4. Деление
 5. История
 6. Выход""")
+
+def main():
+    print("Операции над X и Y")
+    history = list()
+    print_hint()
     while True:
         inp = input()
         if inp == "1":
@@ -30,12 +34,8 @@ def main():
             break
         else:
             print("Неверный ввод")
-            print("""1. Сложение
-2. Вычитание
-3. Умножение
-4. Деление
-5. История
-6. Выход""")
+            print_hint()
 
 
-main()
+if __name__ == "__main__":
+    main()
