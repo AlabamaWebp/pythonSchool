@@ -10,6 +10,7 @@ def print_hint():
 5. История
 6. Выход""")
 
+
 def main():
     print("Операции над X и Y")
     history = list()
